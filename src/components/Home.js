@@ -2,7 +2,14 @@ import React from "react";
 import { Button, Form, Grid, Header, Image, Message, Segment } from "semantic-ui-react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { fakeAuth } from "../helpers/fakeAuth";
+<<<<<<< HEAD
 import logo from "./images.png";
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4256839e6139500e25d56cce78e80aca412efab6
+>>>>>>> d2d4f191073a1ed0f62615f47888f6e61a6b2863
 
 const LoginForm = () => {
   let history = useHistory();
@@ -20,7 +27,10 @@ const LoginForm = () => {
     <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
         <Header as="h2" color="teal" textAlign="center">
-          <Image src={logo} /> Log-in to your account
+<<<<<<< HEAD
+=======
+          {/* <Image src={logo} /> Log-in to your account */}
+>>>>>>> 4256839e6139500e25d56cce78e80aca412efab6
         </Header>
         <Form size="large">
           <Segment stacked>
