@@ -41,8 +41,8 @@ class NavBar extends React.Component {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/todo">
-                  <NavLink href="/todo">Profile Page</NavLink>
+                <Link to="/profile">
+                  <NavLink>Profile Page</NavLink>
                 </Link>
               </NavItem>
               {/* <NavItem>

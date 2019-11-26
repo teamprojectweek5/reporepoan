@@ -4,14 +4,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import styled from "styled-components";
 
 import PrivateRoute from "./components/PrivateRoute";
-import Login from "./components/Home";
+
 import AuthButton from "./components/AuthButton";
 
 // import "./App.css";
 import NavBar from "./components/NavBar";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-// import Todo from "./components/Todo";
+import "bootstrap/dist/css/bootstrap.min.css";
+import FirstPage from "./components/FirstPage";
+import RegisterForm from "./components/RegisterForm";
 
 class App extends React.Component {
   render() {
@@ -27,15 +27,15 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route exact path="/">
-            <Login />
+            <FirstPage />
           </Route>
           {/* <Route path="/login"></Route> */}
           {/* <Login /> */}
-          <AuthButton />
-          <PrivateRoute path="/todo">
-            {/* <Todo /> */}
-          </PrivateRoute>
-          {/* <PrivateRoute path="/github"></PrivateRoute> */}
+          {/* <AuthButton /> */}
+          <Route path="/register">
+            <RegisterForm />
+          </Route>
+          {/* <PrivateRoute path="/profile"></PrivateRoute> */}
         </Switch>
       </BrowserRouter>
     );
