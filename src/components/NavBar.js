@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse, Navbar, NavDropdown, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "react-bootstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 // import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -28,29 +28,48 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand>
+            <b>Buku Muka</b>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <Link to="/">
+                  <NavLink> Login Page </NavLink>
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/todo">
+                  <NavLink href="/todo">Profile Page</NavLink>
+                </Link>
+              </NavItem>
+              {/* <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem> */}
+              {fakeAuth.isAuthenticated && (
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Options
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem
+                      onClick={() => {
+                        fakeAuth.signout(() => this.props.history.push("/"));
+                      }}
+                    >
+                      Sign Out
+                    </DropdownItem>
+                    {/* <DropdownItem>Settings</DropdownItem> */}
+                    {/* <DropdownItem divider />
+                  <DropdownItem>Log Out</DropdownItem> */}
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              )}
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
     );
   }
