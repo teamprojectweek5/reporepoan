@@ -7,6 +7,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import LoginForm from "./components/Home";
 import AuthButton from "./components/AuthButton";
 
+
 // import "./App.css";
 import NavBar from "./components/NavBar";
 import RegisterForm from "./components/RegisterForm";
