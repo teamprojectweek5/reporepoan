@@ -3,7 +3,6 @@ import { Button, Form, Grid, Header, Image, Message, Segment } from "semantic-ui
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { fakeAuth } from "../helpers/fakeAuth";
 
-
 const LoginForm = () => {
   let history = useHistory();
   let location = useLocation();
