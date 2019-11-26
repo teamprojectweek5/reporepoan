@@ -15,13 +15,8 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          <NavBar />
-          {/* <Wrapper> */}
-          {/* <Header>React Todo</Header> */}
-          {/* <Todo /> */}
-          {/* </Wrapper> */}
-          {/* <Section dark>Dari Wrapper</Section> */}
+        <div>
+          
         </div>
         <Switch>
           <Route exact path="/">
