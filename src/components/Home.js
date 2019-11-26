@@ -4,6 +4,7 @@ import { Link, useHistory, useLocation } from "react-router-dom";
 import { fakeAuth } from "../helpers/fakeAuth";
 import logo from "./images.png";
 import axios from "axios";
+import PasswordShowHide from './PasswordShowHide'
 
 class AddNewData extends Component {
   constructor(props) {
@@ -83,7 +84,7 @@ const LoginForm = () => {
             <Form.Input fluid icon="user" iconPosition="left" placeholder="LastName" type="text" />
             <Form.Input fluid icon="mail" iconPosition="left" placeholder="E-mail address" type="email" />
             <Form.Input fluid icon="phone" iconPosition="left" placeholder="Phone Number" type="text" />
-            <Form.Input fluid icon="lock" iconPosition="left" placeholder="Password" type="password" />
+            <PasswordShowHide/>
             <Form.Input fluid icon="date" iconPosition="left" placeholder="Password" type="date" />
 
             <Link to="/todo">
