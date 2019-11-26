@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Form, Grid, Header, Image, Message, Segment } from "semantic-ui-react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { fakeAuth } from "../helpers/fakeAuth";
-// import logo from "./logo.jpg";
 
 const LoginForm = () => {
   let history = useHistory();
