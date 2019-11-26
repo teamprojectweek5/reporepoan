@@ -1,3 +1,4 @@
+ 
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -9,14 +10,21 @@ import AuthButton from "./components/AuthButton";
 
 // import "./App.css";
 import NavBar from "./components/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import Todo from "./components/Todo";
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          
+        <div className="App">
+          <NavBar />
+          {/* <Wrapper> */}
+          {/* <Header>React Todo</Header> */}
+          {/* <Todo /> */}
+          {/* </Wrapper> */}
+          {/* <Section dark>Dari Wrapper</Section> */}
         </div>
         <Switch>
           <Route exact path="/">
