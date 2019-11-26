@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavLink, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 // import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -36,8 +36,8 @@ class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/">
-                  <NavLink> Login Page </NavLink>
+                <Link to="/login">
+                  <NavLink>Login Page</NavLink>
                 </Link>
               </NavItem>
               <NavItem>
