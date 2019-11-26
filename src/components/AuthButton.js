@@ -3,15 +3,12 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 import { fakeAuth } from "../helpers/fakeAuth";
-<<<<<<< HEAD
 // import Todo from "../components/Todo";
 
 const Wrapper = styled.section`
 text-align: center
 padding: 4em;
 background: ${props => (props.dark ? "grey" : "yellow")}`;
-=======
->>>>>>> d68c6c9dce9778033aa664dbc026a89af8780703
 
 const Header = styled.h1`
   text-align: center;
