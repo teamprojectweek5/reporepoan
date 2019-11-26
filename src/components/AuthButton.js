@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 import { fakeAuth } from "../helpers/fakeAuth";
-import Todo from "../components/Todo";
+// import Todo from "../components/Todo";
 
 const Wrapper = styled.section`
 text-align: center
@@ -24,7 +24,7 @@ function AuthButton() {
       Welcome!{""}
       <Wrapper>
         <Header>React Todo</Header>
-        <Todo />
+        {/* <Todo /> */}
       </Wrapper>
       {/* <button
         onClick={() => {
