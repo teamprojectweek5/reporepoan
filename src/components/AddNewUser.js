@@ -1,29 +1,37 @@
-// import React, { Component } from "react";
-// import axios from 'axios' 
+import React, { Component } from "react";
+import axios from "axios";
 
+const API = `https://cobacoba-hayepe.herokuapp.com/user/register`;
 
+class AddNewUser extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobileNumber: "",
+      firstName: "",
+      lastName: "",
+      dateOfBirth: "",
+      gender: "",
+      email: "",
+      password: ""
+    };
+  }
 
-// class AddNewUser extends Component {
-//   render() {
-//     axios.post(`https://cobacoba-hayepe.herokuapp.com/user/register`, {
-//         {
-//         mobileNumber: "0",
-//         firstName: "",
-//         lastName:"",
-//         dateOfBirth: "",
-//         gender: "",
-//         email: "",
-//         password: ""
-//     }
-//     })
-//           .then(result => console.log(result))
-//           .catch(error => console.log(error));
-//       };
-      
-//     return <div>
+  submitPost = event => {
+    event.preventDefault();
+    axios
+      .post(API, this.state)
+      .then(result => console.log(result))
+      .catch(error => console.log(error));
+  };
 
-//     </div>;
-//   }
-// }
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
+}
 
-// export default AddNewUser;
+export default AddNewUser;

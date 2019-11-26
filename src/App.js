@@ -7,6 +7,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Login from "./components/Home";
 import AuthButton from "./components/AuthButton";
 
+
 // import "./App.css";
 import NavBar from "./components/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,4 +43,32 @@ class App extends React.Component {
   }
 }
 
+
 export default App;
+
+// export default class RegisterForm extends Component {
+// 	constructor(props) {
+// 		super(props);
+// 		this.state = {
+// 			hidden: true,
+// 			password: ""
+// 		};
+// 		this.handlePasswordChange = this.handlePasswordChange.bind(this);
+// 		this.toggleShow = this.toggleShow.bind(this);
+// 	}
+
+// 	toggleShow() {
+// 		this.setState({ hidden: !this.state.hidden });
+// 	}
+
+// 	handlePasswordChange(event) {
+// 		this.setState({ password: event.target.value });
+// 	}
+
+// 	componentDidMount() {
+// 		if (this.props.password) {
+// 			this.setState({ password: this.props.password });
+// 		}
+// 	}
+// <Form.Input fluid icon="lock" iconPosition="left" placeholder="Password" type={this.state.hidden ? "password" : "text"} value={this.state.password} onChange={this.handlePasswordChange} />
+// 							<button onClick={this.toggleShow}>Show / Hide</button>
