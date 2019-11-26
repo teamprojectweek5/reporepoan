@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import styled from "styled-components";
+// import styled from "styled-components";
 
 import PrivateRoute from "./components/PrivateRoute";
 import Login from "./components/Home";
@@ -12,17 +12,6 @@ import NavBar from "./components/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Todo from "./components/Todo";
-
-const Wrapper = styled.section`
-text-align: center
-padding: 4em;
-background: ${props => (props.dark ? "grey" : "yellow")}`;
-
-const Header = styled.h1`
-  text-align: center;
-  background: #000;
-  color: #fff;
-`;
 
 class App extends React.Component {
   render() {
@@ -44,10 +33,6 @@ class App extends React.Component {
           {/* <Login /> */}
           <AuthButton />
           <PrivateRoute path="/todo">
-            <Wrapper>
-              <Header>React Todo</Header>
-              {/* <Todo /> */}
-            </Wrapper>
             {/* <Todo /> */}
           </PrivateRoute>
           {/* <PrivateRoute path="/github"></PrivateRoute> */}

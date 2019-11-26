@@ -1,20 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import styled from "styled-components";
 
 import { fakeAuth } from "../helpers/fakeAuth";
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4256839e6139500e25d56cce78e80aca412efab6
 
-const Wrapper = styled.section`
-text-align: center
-padding: 4em;
-background: ${props => (props.dark ? "grey" : "yellow")}`;
-
-const Header = styled.h1`
-  text-align: center;
-  background: #000;
-  color: #fff;
-`;
 
 function AuthButton() {
   let history = useHistory();
@@ -22,10 +14,13 @@ function AuthButton() {
   return fakeAuth.isAuthenticated ? (
     <p>
       Welcome!{""}
+<<<<<<< HEAD
+=======
       <Wrapper>
         <Header>React Todo</Header>
        
       </Wrapper>
+>>>>>>> 4256839e6139500e25d56cce78e80aca412efab6
       {/* <button
         onClick={() => {
           fakeAuth.signout(() => history.push("/"));
