@@ -9,6 +9,8 @@ import AuthButton from "./components/AuthButton";
 
 // import "./App.css";
 import NavBar from "./components/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import Todo from "./components/Todo";
 
 class App extends React.Component {
