@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 // import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -37,12 +37,12 @@ class NavBar extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <Link to="/">
-                  <NavLink> Login Page </NavLink>
+                   Login Page 
                 </Link>
               </NavItem>
               <NavItem>
                 <Link to="/todo">
-                  <NavLink href="/todo">Profile Page</NavLink>
+          Profile Page
                 </Link>
               </NavItem>
               {/* <NavItem>
