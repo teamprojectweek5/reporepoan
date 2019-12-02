@@ -5,13 +5,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import PrivateRoute from "./components/PrivateRoute";
 
-import AuthButton from "./components/AuthButton";
+// import AuthButton from "./components/AuthButton";
 
 // import "./App.css";
 import NavBar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FirstPage from "./components/FirstPage";
 import RegisterForm from "./components/RegisterForm";
+import ProfilePage from "./components/Profile";
 
 class App extends React.Component {
   render() {
@@ -35,13 +36,14 @@ class App extends React.Component {
           <Route path="/register">
             <RegisterForm />
           </Route>
-          {/* <PrivateRoute path="/profile"></PrivateRoute> */}
+          <PrivateRoute path="/profile">
+            <ProfilePage />
+          </PrivateRoute>
         </Switch>
       </BrowserRouter>
     );
   }
 }
-
 
 export default App;
 

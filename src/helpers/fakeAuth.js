@@ -1,9 +1,9 @@
 export const fakeAuth = {
   isAuthenticated: false,
-  // user: "",
-  authenticate(cb) {
+  user: "",
+  authenticate(name, cb) {
     fakeAuth.isAuthenticated = true;
-    //   fakeAuth.user = "ega";
+    fakeAuth.user = name;
     setTimeout(cb, 100); // fake async
   },
   signout(cb) {

@@ -24,6 +24,12 @@ export function getData() {
   return function(dispatch) {
     dispatch(getDataBegin());
 
-    axios.get();
+    axios
+      .get(`https://cobacoba-hayepe.herokuapp.com/user/all-user`)
+      .then(result => {
+        dispatch(getDataSuccess(result.data.results));
+        console.log(result.data);
+      })
+      .catch(error => dispatch(getDataFailed(error.message)));
   };
 }
